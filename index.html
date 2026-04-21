@@ -6,37 +6,128 @@
   <title>Eric Su | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>Eric Su</h1>
-    <p>Computational Data Science & Business Analytics @ USYD</p>
+<body class="site">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-header-brand">
+        <img
+          class="site-avatar"
+          src="Images/pfp.png"
+          alt="Eric Su"
+          width="96"
+          height="96"
+          decoding="async"
+        />
+        <div class="site-header-text">
+          <h1 class="site-title">Eric Su</h1>
+          <p class="site-tagline">Computational Data Science &amp; Business Analytics @ USYD</p>
+        </div>
+      </div>
+      <nav class="nav-main" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hi there! My name is Eric, and I’m a third-year undergraduate student passionate about data and analytics.</p>
-  </section>
+  <main id="main" class="content-reveal">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m Eric, a fourth-year undergraduate at the University of Sydney, studying computational data science and business
+        analytics with a focus on healthcare applications. Below is a selection of my work; each project links to a
+        dedicated page with more detail.
+      </p> 
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Big Data for Sydney</strong> – An analysis of SA2 regions using open source data from the ABS</li>
-      <li><strong>A Study on Abalone</strong> – A study that aims to find correlations between Abalone measurements and age</li>
-      <li><strong>APS Scraper</strong> – A web scraper that looks for and displays latest jobs offered by the APS</li>
-      <li><strong>Otari Wellbeing App</strong> – A Duolingo-style mental health app made using Flask + JS</li>
-      <li><strong>Better Planner</strong> – My high school software project, a reminders and calendar application built using Swift and SwiftUI</li>
-    </ul>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img
+            class="content-image"
+            src="Images/ABS.png"
+            alt="Australian Bureau of Statistics — Big Data for Sydney project"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="project-card-body">
+            <h3><a href="projects/big-data-sydney.html">Big Data for Sydney</a></h3>
+            <p>
+              An analysis of SA2 regions using open source data from the ABS—exploring patterns across Greater Sydney.
+            </p>
+            <a class="project-link" href="projects/big-data-sydney.html">View project</a>
+          </div>
+        </article>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ericqilinsu@gmail.com">ericqilinsu@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-s-907027252/">My Linkedin</a></p>
-  </section>
+        <article class="project-card">
+          <div class="img-placeholder" role="img" aria-label="Preview image for A Study on Abalone">
+            <span>Abalone study — project preview</span>
+          </div>
+          <div class="project-card-body">
+            <h3><a href="projects/abalone-study.html">A Study on Abalone</a></h3>
+            <p>
+              A study exploring correlations between Abalone measurements and age using statistical and visual methods.
+            </p>
+            <a class="project-link" href="projects/abalone-study.html">View project</a>
+          </div>
+        </article>
 
-  <footer>
-    <p>© 2025 Eric Su</p>
-    <p>Note: Website is still a WIP</p>
+        <article class="project-card">
+          <div class="img-placeholder" role="img" aria-label="Preview image for APS Scraper">
+            <span>APS job listings — project preview</span>
+          </div>
+          <div class="project-card-body">
+            <h3><a href="projects/aps-scraper.html">APS Scraper</a></h3>
+            <p>
+              A web scraper that finds and displays the latest jobs offered by the Australian Public Service.
+            </p>
+            <a class="project-link" href="projects/aps-scraper.html">View project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="img-placeholder" role="img" aria-label="Preview image for Otari Wellbeing App">
+            <span>Otari Wellbeing — project preview</span>
+          </div>
+          <div class="project-card-body">
+            <h3><a href="projects/otari-wellbeing.html">Otari Wellbeing App</a></h3>
+            <p>
+              A Duolingo-style mental health app built with Flask and JavaScript to encourage daily wellbeing habits.
+            </p>
+            <a class="project-link" href="projects/otari-wellbeing.html">View project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="img-placeholder" role="img" aria-label="Preview image for Better Planner">
+            <span>Better Planner — project preview</span>
+          </div>
+          <div class="project-card-body">
+            <h3><a href="projects/better-planner.html">Better Planner</a></h3>
+            <p>
+              My high school software project: a reminders and calendar application built with Swift and SwiftUI.
+            </p>
+            <a class="project-link" href="projects/better-planner.html">View project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-block">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ericqilinsu@gmail.com">ericqilinsu@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-s-907027252/">linkedin.com/in/eric-s-907027252</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Eric Su</p>
+    <p>Website work in progress.</p>
   </footer>
 </body>
 </html>

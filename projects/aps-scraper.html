@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APS Scraper | Eric Su</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="site">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-header-brand">
+        <img
+          class="site-avatar"
+          src="../Images/pfp.png"
+          alt="Eric Su"
+          width="96"
+          height="96"
+          decoding="async"
+        />
+        <div class="site-header-text">
+          <h1 class="site-title">Eric Su</h1>
+          <p class="site-tagline">Computational Data Science &amp; Business Analytics @ USYD</p>
+        </div>
+      </div>
+      <nav class="nav-main" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <nav class="back-nav" aria-label="Breadcrumb">
+      <a href="../index.html#projects">← Back to all projects</a>
+    </nav>
+
+    <h1 class="page-title">APS Scraper</h1>
+    <p class="detail-lead">
+      A scraper that collects and displays the latest Australian Public Service job listings.
+    </p>
+
+    <div class="img-placeholder img-placeholder--hero" role="img" aria-label="Featured visual: interface or pipeline overview">
+      <span>Interface or pipeline overview</span>
+    </div>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        The Australian Public Service advertises roles across many agencies. This project automates fetching those
+        listings, normalising fields (title, agency, location, closing date), and presenting them in one place so you
+        can browse or filter without visiting every site manually.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I did</h2>
+      <p>
+        Implemented HTTP requests and HTML parsing with polite rate limits, handled pagination or search endpoints, and
+        stored or rendered results in a simple web UI or export format.
+      </p>
+    </section>
+
+    <section>
+      <h2>Gallery</h2>
+      <div class="img-placeholder" role="img" aria-label="Additional screenshot: listings table or CLI output">
+        <span>Listings view or CLI output</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tools &amp; stack</h2>
+      <p>Python with requests and Beautiful Soup; lightweight UI with Flask or Streamlit where used.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Eric Su</p>
+    <p>Website work in progress.</p>
+    <p><a href="../index.html">Home</a></p>
+  </footer>
+</body>
+</html>
