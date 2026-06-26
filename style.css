@@ -809,3 +809,240 @@ main:not(.content-reveal) section {
     transform: none !important;
   }
 }
+
+
+/* Wider layout */
+
+.site-header-inner,
+main {
+max-width: 1200px;
+}
+
+/* Improved typography */
+
+body.site {
+font-size: 1.05rem;
+line-height: 1.8;
+}
+
+.site-title {
+font-size: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+.site-tagline {
+font-size: 1.1rem;
+max-width: 60ch;
+}
+
+.page-title {
+font-size: clamp(2rem, 4vw, 3rem);
+}
+
+/* Better spacing */
+
+main {
+padding-top: 3rem;
+padding-bottom: 4rem;
+}
+
+/* Premium section cards */
+
+main > section {
+background: rgba(255, 255, 255, 0.82);
+backdrop-filter: blur(10px);
+border-radius: 20px;
+padding: 2rem;
+box-shadow: 0 10px 30px rgba(0, 41, 107, 0.05);
+margin-bottom: 2rem;
+}
+
+/* Header upgrade */
+
+.site-header {
+padding: 3.5rem clamp(1rem, 4vw, 2.5rem);
+}
+
+/* Better hero image */
+
+.detail-hero-image {
+width: 100%;
+max-height: 500px;
+object-fit: cover;
+border-radius: 20px;
+margin-bottom: 2rem;
+}
+
+/* Project grid */
+
+.project-grid {
+gap: 2rem;
+}
+
+/* Project cards */
+
+.project-card {
+border: none;
+border-radius: 20px;
+overflow: hidden;
+background: #fff;
+box-shadow: 0 8px 30px rgba(0, 41, 107, 0.08);
+}
+
+.project-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 18px 45px rgba(0, 41, 107, 0.12);
+}
+
+/* Cleaner image aspect ratio */
+
+.project-card .content-image {
+aspect-ratio: 16 / 9;
+object-fit: cover;
+}
+
+/* Project tags */
+
+.project-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 0.6rem;
+margin: 1rem 0 2rem;
+}
+
+.project-tags span {
+padding: 0.45rem 0.85rem;
+border-radius: 999px;
+background: rgba(0, 80, 157, 0.08);
+color: var(–color-blue);
+font-size: 0.85rem;
+font-weight: 600;
+}
+
+/* Skills tags */
+
+.skills-list {
+display: flex;
+flex-wrap: wrap;
+gap: 0.6rem;
+}
+
+.skills-list span {
+padding: 0.45rem 0.85rem;
+border-radius: 999px;
+background: rgba(253, 197, 0, 0.12);
+color: var(–color-navy-deep);
+font-size: 0.85rem;
+font-weight: 600;
+}
+
+/* Gallery layout */
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1rem;
+}
+
+.gallery-grid img {
+width: 100%;
+border-radius: 14px;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons */
+
+.btn,
+.hero-button {
+display: inline-block;
+padding: 0.9rem 1.4rem;
+border-radius: 12px;
+background: var(–color-navy);
+color: white;
+text-decoration: none;
+font-weight: 600;
+transition:
+transform 0.2s ease,
+box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.hero-button:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 20px rgba(0, 41, 107, 0.15);
+}
+
+/* Featured project */
+
+.project-card.featured {
+grid-column: span 2;
+background:
+linear-gradient(
+135deg,
+rgba(0, 41, 107, 0.03),
+rgba(253, 197, 0, 0.08)
+);
+}
+
+@media (max-width: 768px) {
+.project-card.featured {
+grid-column: span 1;
+}
+}
+
+/* Homepage hero */
+
+.hero {
+text-align: center;
+padding: 2rem 0 5rem;
+}
+
+.hero h1 {
+font-size: clamp(3rem, 7vw, 5rem);
+line-height: 1.05;
+margin-bottom: 1rem;
+color: var(–color-navy-deep);
+}
+
+.hero p {
+max-width: 700px;
+margin: 0 auto;
+font-size: 1.2rem;
+color: var(–color-muted);
+}
+
+/* Cleaner h2 styling */
+
+h2 {
+font-size: 1.6rem;
+}
+
+h2::after {
+height: 5px;
+border-radius: 999px;
+}
+
+/* Mobile improvements */
+
+@media (max-width: 768px) {
+
+main > section {
+padding: 1.5rem;
+}
+
+.hero {
+padding: 1rem 0 3rem;
+}
+
+.site-header {
+padding: 2rem 1rem;
+}
+
+.project-grid {
+grid-template-columns: 1fr;
+}
+
+.gallery-grid {
+grid-template-columns: 1fr;
+}
+
+}
